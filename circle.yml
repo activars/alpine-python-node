@@ -8,12 +8,4 @@ dependencies:
 
 compile:
   override:
-    - service docker status
     - docker build --rm=false -t alpine-python-node:$CIRCLE_BUILD_NUM .
-
-# deployment:
-#   hub:
-#     branch: 
-#     commands:
-#       - docker
-
