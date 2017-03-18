@@ -9,3 +9,7 @@ dependencies:
 compile:
   override:
     - docker build --rm=false -t alpine-python-node:$CIRCLE_BUILD_NUM .
+
+test:
+  override:
+    - echo 'no test'
